@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% block title %} - Clinical Connect{% endblock %}
+  </title>
+  {% endblock %}
+</head>
+<body>
+  <div id="navbar" class="navbar">
+    {% block navbar %}
+      <a href="">
+        <h1>MyStory</h1>
+      </a>
+      
+      <ul>
+        <li>home</li>
+        <li>Stories</li>
+        <li>sign in</li>
+        <li>sign up</li>
+      </ul>
+    {% endblack %}
+  </div>
+  
+</body>
+</html>
