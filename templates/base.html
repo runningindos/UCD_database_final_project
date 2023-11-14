@@ -5,25 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    {% block title %} - Clinical Connect{% endblock %}
+    {% block title %}{% endblock %} - MyStory
   </title>
   {% endblock %}
 </head>
 <body>
-  <div id="navbar" class="navbar">
-    {% block navbar %}
-      <a href="">
-        <h1>MyStory</h1>
-      </a>
-      
-      <ul>
-        <li>home</li>
-        <li>Stories</li>
-        <li>sign in</li>
-        <li>sign up</li>
-      </ul>
-    {% endblack %}
+  <div class="content" id="content">
+    {% block content %}{% endblock}
   </div>
-  
+
+  <div class="footer" id="footer">
+    {% block footer %}
+    <div class="copy" id="copy">&copy; ricky h.</div>
+    <div class="contact" id="contact">
+      <a href="mailto:ricy@ricky.com"></a>say hi</div>
+    {% endblock %}
+  </div>
 </body>
 </html>

@@ -1,1 +1,29 @@
+{% set title = "Welcom to MyStory" %}
 {% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="welcome">
+    <h3 class="welcomeH">Welcome to MyStory</h3>
+    <p class="welcomeP">
+      MyStory is a place for our community to write short stories for everyone to enjoy
+    </p>
+      
+    <p class="welcomeP2">
+      We encourage you to write your short stories and share them with the community. 
+    </p>
+  </div>
+
+  <div class="homeMain" id="homeMain">
+    <div class="readBox" id="readBox">
+      <button class="readBtn" id="readBtn">
+        Read
+      </button>
+    </div>
+    <div class="writeBox" id="writeBox">
+      <button class="writeBtn" id="writeBtn">
+        Write
+      </button>
+    </div>
+  </div>
+  {% endblock %}

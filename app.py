@@ -26,3 +26,7 @@ app.config.from_object('config')
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/write/<int:post_id>')
+def write(post_id):
+    return render_template('write.html', post_id=post_id)

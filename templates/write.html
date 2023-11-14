@@ -1,0 +1,16 @@
+{% set title = Write a Story %}
+{% extends 'base.html' %}
+
+{%block content %}
+  <h1 class="writeHeader">
+    Write your story here!
+  </h1>
+
+  <form class="storyForm" action="{{ url_for('write_story_action') }}" method="POST">
+    <input type="text" name="title" placeholder="Story Title" required>
+    <input type="text" name="synopsis" placeholder="What's your story about?" required>
+    <textarea name="story" placeholder="Tell us your story" required></textarea>
+    <button type="submit">Publish</button>
+  </form>
+
+{% endblock %}
