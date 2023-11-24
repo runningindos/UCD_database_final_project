@@ -1,0 +1,24 @@
+{% set title = Register %}
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="registerHeader">
+    <h1 class="registerWelcome">
+      Sign up to share your short stories!
+    </h1>
+  </div>
+
+  <div class="registerForm" id="registerForm">
+    <form action="{{ url_for('register_call')}}" class="register" id="register">
+      <input type="text" class="userName" id="userName">
+      <label for="name">What's your name?</label>
+      <input type="email" class="email" id="email">
+      <label for="email">What's your email?</label>
+      <button type="submit">Join us!</button>
+    </form>
+  </div>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
+

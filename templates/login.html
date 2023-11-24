@@ -1,0 +1,23 @@
+{% set title = login %}
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="loginHeader">
+    <h1 class="loginWelcome">
+      Sign up to share your short stories!
+    </h1>
+  </div>
+
+  <div class="loginForm" id="loginForm">
+    <form action="{{ url_for('login_call')}}" class="login" id="login">
+      <input type="text" class="loginUserName" id="loginUserName">
+      <label for="name">What's your name?</label>
+      <input type="email" class="loginEmail" id="loginEmail">
+      <label for="email">What's your email?</label>
+      <button class="loginButton" type="submit">Join us!</button>
+    </form>
+  </div>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
