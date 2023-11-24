@@ -37,10 +37,10 @@ def read():
 
 @app.route('/register')
 def register():
-    return render_template('/register', methods=['POST'])
+    return render_template('register', methods=['POST'])
 
     
 
 @app.route('/login')
-def register():
-    return render_template('/login', methods=['GET'])
+def login():
+    return render_template('login', methods=['GET'])
