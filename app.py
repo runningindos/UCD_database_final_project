@@ -29,7 +29,7 @@ def home():
 
 @app.route('/write')
 def write():
-    return render_template('write.html', methods=['POST'])
+    return render_template('write.html', methods=['GET', 'POST'])
 
 @app.route('/read')
 def read():
@@ -37,10 +37,9 @@ def read():
 
 @app.route('/register')
 def register():
-    return render_template('register', methods=['POST'])
-
-    
+    return render_template('register', methods=['GET', 'POST'])
 
 @app.route('/login')
 def login():
-    return render_template('login', methods=['GET'])
+    return render_template('login', methods=['GET', 'POST'])
+

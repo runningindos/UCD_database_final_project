@@ -9,7 +9,7 @@
   </div>
 
   <div class="loginForm" id="loginForm">
-    <form action="{{ url_for('login_call')}}" class="login" id="login">
+    <form action="{{ url_for('login_call')}}" class="login" id="login" method="POST">
       <input type="text" class="loginUserName" id="loginUserName">
       <label for="name">What's your name?</label>
       <input type="email" class="loginEmail" id="loginEmail">
