@@ -37,9 +37,9 @@ def read():
 
 @app.route('/register')
 def register():
-    return render_template('register', methods=['GET', 'POST'])
+    return render_template('register.html', methods=['GET', 'POST'])
 
 @app.route('/login')
 def login():
-    return render_template('login', methods=['GET', 'POST'])
+    return render_template('login.html', methods=['GET', 'POST'])
 

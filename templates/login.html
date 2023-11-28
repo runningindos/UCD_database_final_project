@@ -9,15 +9,13 @@
   </div>
 
   <div class="loginForm" id="loginForm">
-    <form action="{{ url_for('login_call')}}" class="login" id="login" method="POST">
-      <input type="text" class="loginUserName" id="loginUserName">
-      <label for="name">What's your name?</label>
-      <input type="email" class="loginEmail" id="loginEmail">
+    <form action="{{ url_for('login')}}" class="login" id="login" method="POST">
+      <input type="text" class="loginEmail" id="loginEmail">
       <label for="email">What's your email?</label>
+      <input type="password" class="loginPass" id="loginPass">
+      <label for="password">What's your password?</label>
       <button class="loginButton" type="submit">Join us!</button>
     </form>
   </div>
 
-{% endblock %}
-{% block footer %}
 {% endblock %}
