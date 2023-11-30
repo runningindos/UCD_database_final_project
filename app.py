@@ -27,9 +27,9 @@ app.config.from_object('config')
 def home():
     return render_template('index.html')
 
-@app.route('/write')
+@app.route('/write', methods=['GET'])
 def write():
-    return render_template('write.html', methods=['GET', 'POST'])
+    return render_template('write.html')
 
 @app.route('/read')
 def read():

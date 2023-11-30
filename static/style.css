@@ -1,6 +1,23 @@
 body {
-  display: inline-block;
   width: 80%;
+  height: 100vh;
   background-color: 000000;
+  margin: auto;
+  text-align: center;
 }
 
+.login_register {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-evenly;
+}
+
+.loginButton {
+  border: 2px solid red;
+  background-color: blue;
+}
+
+.registerButton {
+  border: 2px solid red;
+  background-color: blue;
+}

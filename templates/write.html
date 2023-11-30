@@ -1,12 +1,17 @@
-{% set title = Write a Story %}
+{% set title = "write a Story" %}
 {% extends 'base.html' %}
 
-{%block content %}
+{% block content %}
+  <a href="/index" class="homeIcon"><img src="/images/house-outline.png" alt="home">
+  </a>
+
+  <img src="/images/IMG_8525.jpg" alt="dodder">
+
   <h1 class="writeHeader">
     Write your story here!
   </h1>
 
-  <form class="storyForm" action="{{ url_for('write_story_action') }}" method="POST">
+  <form class="storyForm" action="{{ url_for('write')}}" method="POST">
     <input class="storyTitle" type="text" name="title" placeholder="Story Title" required>
     <input class="storySynopsis" type="text" name="synopsis" placeholder="What's your story about?" required>
     <textarea class="storyBody" name="story" placeholder="Tell us your story" required>Tell your tale!</textarea>

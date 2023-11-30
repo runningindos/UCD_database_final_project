@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-  {% block title %} - MyStory
+  {{title}}
   </title>
-  {% endblock %}
+  <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
   <div class="content" id="content">
@@ -18,7 +18,7 @@
     <div class="copy" id="copy">&copy; ricky h.</div>
     <div class="contact" id="contact">
       <a href="mailto:ricy@ricky.com"></a>say hi</div>
-    {% endblock %}
   </div>
+  {% endblock %}
 </body>
 </html>

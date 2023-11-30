@@ -19,12 +19,12 @@ class User(UserMixin, db.Model):
     
 class Story(db.Model):
     stid = db.mapped_column(db.Integer, primary_key=True)
-    title = db.mapped_column(db.String(50), unique=True)
-    content = db.mapped_column(db.Text, nullable=False)
+    sttitle = db.mapped_column(db.String(50), unique=True)
+    stbody = db.mapped_column(db.Text, nullable=False)
     created_at = db.mapped_column(db.DateTime, default=datetime.utcnow)
     story_teller_id = db.mapped_column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     story_teller = db.relationship('User', backref=db.backref('story', lazy=True))
 
     def __str__(self):
-        return f'"{self.title}" by {self.story_teller} ({self.created_at:%Y-%m-%d})'
+        return f'"{self.sttitle}" by {self.story_teller} ({self.created_at:%Y-%m-%d})'

@@ -1,12 +1,13 @@
-{% set title = Write a Story %}
+{% set title = "Read" %}
 {% extends 'base.html' %}
 
 {% block content %}
   <div>
-    <label for="" class="storyTitle"></label>
-    <button class="readStoryBtn">
-    </button>
+    <label for="" class="storyTitle">
+      {{storyTitle}}
+    </label>
+    <a class="readStoryBtn"></a>
   </div>
+
 {% endblock %}
-{% block footer %}
-{% endblock %}
+

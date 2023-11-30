@@ -4,6 +4,7 @@
 {% block content %}
 
   <div class="welcome">
+    <img src="../images/house-outline.png" alt="home">
     <h3 class="welcomeH">Welcome to MyStory</h3>
     <p class="welcomeP">
       MyStory is a place for our community to write short stories for everyone to enjoy
@@ -14,16 +15,19 @@
     </p>
   </div>
   
-  <div class="loginButton" id="loginButton">
-    <a href="/login">
-      <h3>Login</h3>
-    </a>
-  </div>
+  <div class="login_register">
+    <div class="loginButton" id="loginButton">
+      <a href="/login" class="loginBtn" id="loginBtn">
+        <h3>Login</h3>
+      </a>
+    </div>
 
-  <div class="registerButton" id="registerButton">
-    <a href="/register">
-      <h3>Join</h3>
-    </a>
+    <div class="registerButton" id="registerButton">
+      <a href="/register"   class="registerButton" id="registerButton">
+        <h3>Join</h3>
+      </a>
+    </div>
+    
   </div>
 
   <div class="homeMain" id="homeMain">
