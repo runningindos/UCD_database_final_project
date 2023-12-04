@@ -7,18 +7,28 @@
   {{title}}
   </title>
   <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ephesis&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="content" id="content">
     {% block content %}{% endblock %}
   </div>
 
-  <div class="footer" id="footer">
+  <footer class="footer" id="footer">
     {% block footer %}
-    <div class="copy" id="copy">&copy; ricky h.</div>
+    <div> 
+      <p class="copy" id="copy">&copy; ricky h.</p>
+    </div>
     <div class="contact" id="contact">
-      <a href="mailto:ricy@ricky.com"></a>say hi</div>
-  </div>
+      <a class="contactLink" href="mailto:ricy@ricky.com">say hi</a>
+    </div>
+  </footer>
   {% endblock %}
 </body>
 </html>

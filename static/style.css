@@ -1,23 +1,426 @@
+/* Colours
+  #F4B942 - burnt gold
+  #EFF2F1 - light grey
+  #97D8C4 - medium soft aqua
+  #6B9AC4 - medium greyish blue
+  #4059AD - dark blue
+  #FFE9CE - light soft peach
+  #FFB5C2 - medium pink
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 80%;
   height: 100vh;
-  background-color: 000000;
-  margin: auto;
+  background-color: #EFF2F1;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pageTopper {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
 }
 
+.homeIcon {
+  width: 30px;
+  height: 30px;
+}
+
+/*index.html
+HOMEPAGE*/
+body {
+  background-color: #EFF2F1;
+}
+
+.welcome {
+  background-color: #EFF2F1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: .15em;
+  font-family: 'Ephesis', cursive;
+  font-size: 2em;
+  word-spacing: .15em;
+}
+
+.welcomeH {
+  color: #4059AD;
+}
+
+.welcomeP {
+  padding: 20px 0 20px 0;
+}
+
+.welcomeP2 {
+  padding: 20px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*section - login*/
 .login_register {
   display: flex;
-  border: 2px solid black;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Tahoma', cursive;
+}
+
+.loginText{
+  padding: 20px 0;
+  background-color: #97D8C4;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+.loginContainer {
+  background-color: #97D8C4;
+  padding: 50px 0;
+}
+
+.loginBtn {
+  color: #EFF2F1;
+  letter-spacing: 3px;
+}
+
+.loginTextContainer {
+  border-bottom: 2px solid #F4B942;
+  border-right: 2px solid #F4B942;
+  border-bottom-right-radius: 25px;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+  border-bottom-left-radius: 25px;
+  border-left: 2px solid #F4B942;
+}
+
+/*section - register*/
+.register_register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Tahoma', cursive;
+}
+
+.registerText{
+  padding: 20px 0;
+  background-color: #97D8C4;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+.registerContainer {
+  background-color: #97D8C4;
+  padding: 50px 0;
+}
+
+.registerBtn {
+  color: #EFF2F1;
+  letter-spacing: 3px;
+}
+
+.registerTextContainer {
+  border-bottom: 2px solid #F4B942;
+  border-right: 2px solid #F4B942;
+  border-bottom-right-radius: 25px;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+  border-bottom-left-radius: 25px;
+  border-left: 2px solid #F4B942;
+}
+
+/*section read*/
+
+.read_write{
+  background-color: #6B9AC4;
+}
+
+.read_register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Tahoma', cursive;
+}
+
+.readText{
+  padding: 20px 0;
+  background-color: #6B9AC4;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+.readContainer {
+  background-color: #6B9AC4;
+  padding: 50px 0;
+}
+
+.readBtn {
+  color: #EFF2F1;
+  letter-spacing: 3px;
+}
+
+.readTextContainer {
+  border-bottom: 2px solid #F4B942;
+  border-right: 2px solid #F4B942;
+  border-bottom-right-radius: 25px;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+  border-bottom-left-radius: 25px;
+  border-left: 2px solid #F4B942;
+}
+
+/*section - write*/
+
+.read_write{
+  background-color: #6B9AC4;
+  font-family: 'Tahoma', cursive;
+}
+
+.write_register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Tahoma', cursive;
+}
+
+.writeText{
+  padding: 20px 0;
+  background-color: #6B9AC4;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+.writeContainer {
+  background-color: #6B9AC4;
+  padding: 50px 0;
+}
+
+.writeBtn {
+  color: #EFF2F1;
+  letter-spacing: 3px;
+}
+
+.writeTextContainer {
+  border-bottom: 2px solid #F4B942;
+  border-right: 2px solid #F4B942;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-left: 2px solid #F4B942;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+}
+
+footer {
+  display: flex;
   justify-content: space-evenly;
+  background-color: #4059AD;
+  height: 20%;
+  font-family: 'Ephesis', cursive;
+  font-size: 2em;
+  align-items: center;
+}
+
+.copy {
+  color: #EFF2F1;
+}
+
+.contactLink {
+  color: #EFF2F1;
+}
+
+/* LOGIN */
+.loginHeader {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Ephesis', cursive;
+  font-size: 1.5em;
+  color: #4059AD;
+}
+
+.loginForm {
+  display: flex;  
+  flex-direction: column;
+  border: 2px solid #4059AD;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  box-shadow: 3px 10px 50px #bbb;
+}
+
+.loginEmail, .loginPass{
+  display: flex;
+  background-color: #EFF2F1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #4059AD;
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.loginEmailLabel, .loginPassLabel {
+  margin-top: 20px;
+  font-family: 'Tahoma', cursive;
+  letter-spacing: .2em;
 }
 
 .loginButton {
-  border: 2px solid red;
-  background-color: blue;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid #97D8C4;
+  color: #EFF2F1;
+  background-color: #4059AD;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+/* REGISTER */
+.registerHeader {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Ephesis', cursive;
+  font-size: 1.5em;
+  color: #4059AD;
+}
+
+.registerForm {
+  display: flex;  
+  flex-direction: column;
+  border: 2px solid #97D8C4;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  box-shadow: 3px 10px 50px #bbb;
+}
+
+.registerUserName, .registerEmail, .registerPass {
+  display: flex;
+  background-color: #EFF2F1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #97D8C4;
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.registerEmailLabel, .registerNameLabel, .registerPassLabel {
+  margin-top: 20px;
+  font-family: 'Tahoma', cursive;
+  letter-spacing: .2em;
 }
 
 .registerButton {
-  border: 2px solid red;
-  background-color: blue;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid #4059AD;
+  color: #4059AD;
+  background-color: #97D8C4;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+/* WRITE */ 
+.pageTopper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Ephesis', cursive;
+  font-size: 1.5em;
+  color: #4059AD;
+}
+
+.storyForm {
+  display: flex;  
+  flex-direction: column;
+  border: 2px solid #FFB5C2;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  box-shadow: 3px 10px 50px #bbb;
+}
+
+.storyTitle, .storySynopsis, .storyBody {
+  display: flex;
+  background-color: #EFF2F1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #FFB5C2;
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.storyTitleLabel, .storySynopsisLabel, .storyBodyLabel {
+  margin-top: 20px;
+  font-family: 'Tahoma', cursive;
+  letter-spacing: .2em;
+}
+
+.storyBody {
+  margin-top: 50px;
+  height: 200px;
+  border: 2px solid #FFB5C2;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.storyButton {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid #4059AD;
+  color: #4059AD;
+  background-color: #FFB5C2;
+  font-size: 1.2em;
+  letter-spacing: 3px;
 }

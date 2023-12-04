@@ -2,19 +2,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <a href="/index" class="homeIcon"><img src="/images/house-outline.png" alt="home">
-  </a>
+  <div class="pageTopper" id="pageTopper">
+    <a href="/" class="homeIconLink"><img src="../static/house-outline.png" alt="home" class="homeIcon">
+    </a>
 
-  <img src="/images/IMG_8525.jpg" alt="dodder">
+    <h1 class="writeHeader">
+      Write your story here!
+    </h1>
+  </div>
 
-  <h1 class="writeHeader">
-    Write your story here!
-  </h1>
-
-  <form class="storyForm" action="{{ url_for('write')}}" method="POST">
-    <input class="storyTitle" type="text" name="title" placeholder="Story Title" required>
-    <input class="storySynopsis" type="text" name="synopsis" placeholder="What's your story about?" required>
-    <textarea class="storyBody" name="story" placeholder="Tell us your story" required>Tell your tale!</textarea>
-    <button class="storyButton" type="submit">Publish</button>
+  <div class="storyFormContainer">
+    <form class="storyForm" action="{{ url_for('write')}}" method="POST">
+      <input class="storyTitle" type="text" name="title" required>
+      <label for="title" class="storyTitleLabel">Story Title</label>
+      <input class="storySynopsis" type="text" name="synopsis" required>
+      <label for="synopsis" class="storySynopsisLabel">What's your story about?</label>
+      <textarea class="storyBody" name="story"  required></textarea>
+      <label for="story" class="storyBodyLabel">Tell your tale</label>
+      <button class="storyButton" type="submit">Publish</button>
+    </div>
   </form>
 {% endblock %}

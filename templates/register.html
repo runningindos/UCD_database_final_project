@@ -3,18 +3,23 @@
 
 {% block content %}
   <div class="registerHeader">
+    <a href="/" class="homeIconLink"><img src="../static/house-outline.png" alt="home" class="homeIcon">
+    </a>
+
     <h1 class="registerWelcome">
       Sign up to share your short stories!
     </h1>
   </div>
 
-  <div class="registerForm" id="registerForm">
-    <form action="{{ url_for('register')}}" class="register" id="register" method="POST">
-      <input type="text" class="userName" id="userName">
-      <label for="name">What's your name?</label>
-      <input type="email" class="email" id="email">
-      <label for="email">What's your email?</label>
-      <button type="submit">Join us!</button>
+  <div class="registerFormContainer" id="registerForm">
+    <form action="{{ url_for('register_user')}}" class="registerForm" id="register" method="POST">
+      <input type="text" class="registerUserName" id="userName" name="userName">
+      <label class="registerNameLabel" for="name">What's your name?</label>
+      <input type="email" class="registerEmail" id="email" name="userEmail">
+      <label class="registerEmailLabel" for="email">What's your email?</label>
+      <input class="registerPass" type="password" class="userPass" id="userPass" name="userPassword">
+      <label class="registerPassLabel" for="password">choose a password</label>
+      <button class="registerButton" type="submit">Join us!</button>
     </form>
   </div>
 

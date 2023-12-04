@@ -3,19 +3,22 @@
 
 {% block content %}
   <div class="loginHeader">
+    <a href="/" class="homeIconLink"><img src="../static/house-outline.png" alt="home" class="homeIcon">
+    </a>
+
     <h1 class="loginWelcome">
-      Sign up to share your short stories!
+      Log in to share your short stories!
     </h1>
   </div>
 
 
-  <div class="loginForm" id="loginForm">
-    <form action="{{ url_for('login')}}" class="login" id="login" method="POST">
+  <div class="loginFormContainer" id="loginFormContainer">
+    <form action="{{ url_for('login')}}" class="loginForm" id="loginForm" method="POST">
       <input type="text" class="loginEmail" id="loginEmail">
-      <label for="email">What's your email?</label>
+      <label class="loginEmailLabel">What's your email?</label>
       <input type="password" class="loginPass" id="loginPass">
-      <label for="password">What's your password?</label>
-      <button class="loginButton" type="submit">Join us!</button>
+      <label class="loginPassLabel" for="password">What's your password?</label>
+      <button class="loginButton" type="submit">Let's Go!</button>
     </form>
   </div>
 {% endblock %}

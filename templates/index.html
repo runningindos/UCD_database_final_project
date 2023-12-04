@@ -2,12 +2,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<body class="indexBody">
   <div class="welcome">
-    <img src="../images/house-outline.png" alt="home">
-    <h3 class="welcomeH">Welcome to MyStory</h3>
+    <h1 class="welcomeH">Welcome to MyStory</h1>
     <p class="welcomeP">
-      MyStory is a place for our community to write short stories for everyone to enjoy
+      MyStory is a place for our community to write short stories for everyone to enjoy.
     </p>
       
     <p class="welcomeP2">
@@ -16,31 +15,50 @@
   </div>
   
   <div class="login_register">
-    <div class="loginButton" id="loginButton">
+
+    <p class="loginText">Login to write a story!</p>
+
+    <div class="loginContainer" id="loginContainer">
       <a href="/login" class="loginBtn" id="loginBtn">
-        <h3>Login</h3>
+        <div class="loginTextContainer">
+          <h3 class="loginWord">Login</h3>
+        </div>
       </a>
     </div>
 
-    <div class="registerButton" id="registerButton">
-      <a href="/register"   class="registerButton" id="registerButton">
-        <h3>Join</h3>
+    <p class="registerText">Join to tell your own tales!</p>
+
+    <div class="registerContainer" id="registerContainer">
+      <a href="/register" class="registerBtn" id="registerBtn">
+        <div class="registerTextContainer">
+          <h3 class="registerWord">Join</h3>
+        </div>
       </a>
     </div>
+
+  </div>
+
+  <div class="read_write">
     
-  </div>
+    <p class="readText">Read stories. No need to login!</p>
 
-  <div class="homeMain" id="homeMain">
-    <div class="readBox" id="readBox">
+    <div class="readContainer" id="readContainer">
       <a href="/read" class="readBtn" id="readBtn">
-        Read
+        <div class="readTextContainer">
+          <h3 class="readWord">Read Stories</h3>
+        </div>
       </a>
     </div>
 
-    <div class="writeBox" id="writeBox">
+    <p class="readText">Tell your tale!</p>
+
+    <div class="writeContainer" id="writeContainer">
       <a href="/write" class="writeBtn" id="writeBtn">
-        Write
+        <div class="writeTextContainer">
+          <h3 class="writeWord">Share a story</h3>
+        </div>
       </a>
     </div>
   </div>
-  {% endblock %}
+</body>
+{% endblock %}
