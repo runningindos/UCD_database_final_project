@@ -2,12 +2,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div>
-    <label for="" class="storyTitle">
-      {{storyTitle}}
-    </label>
-    <a class="readStoryBtn"></a>
-  </div>
+<div class="registerHeader">
+  <a href="/" class="homeIconLink"><img src="../static/house-outline.png" alt="home" class="homeIcon">
+  </a>
 
+  <h1 class="registerWelcome">
+    Enjoy your reading time!
+  </h1>
+</div>
+
+<div>
+  <label for="" class="readStoryTitle">
+    {{storyTitle}}
+  </label>
+  <a class="readStoryButton"></a>
+</div>
+
+  
 {% endblock %}
 
