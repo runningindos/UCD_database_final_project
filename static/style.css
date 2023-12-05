@@ -425,6 +425,12 @@ footer {
   letter-spacing: 3px;
 }
 
+.writeStoryTextOnRead {
+  font-family: 'Tahoma', cursive;
+  letter-spacing: .2em;
+  background-color: #EFF2F1;
+}
+
 /* Media queries */
 
 @media (max-width: 600px) {
