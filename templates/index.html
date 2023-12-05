@@ -2,6 +2,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% if username %}
+  <p class="ifUserNameText">Hi, {{userName}}!</p>
+  <a href="/login" class="logoutButton" id="logoutButton"></a>
+{% endif %}
 <body class="indexBody">
   <div class="welcome">
     <h1 class="welcomeH">Welcome to MyStory</h1>

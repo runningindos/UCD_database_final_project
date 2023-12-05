@@ -1,0 +1,7 @@
+-- database: /Users/user/Documents/UCD_Database_final_project/UCD_database_final_project/instance/db.sqlite3
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM "story";
+
+`PRAGMA foreign_keys = OFF`

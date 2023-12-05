@@ -33,7 +33,19 @@ def home():
 
 @app.route('/write', methods=['GET', 'POST'])
 def write():
+    if request.method == 'POST':
+        title = request.form['title']
+        synopsis = request.form['synopsis']
+        story = request.form['story']
+
+# Process the form data as needed (e.g., save to a database)
+
+        return f"Title: {title}<br>Synopsis: {synopsis}<br>Story: {story}"
+
     return render_template('write.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 

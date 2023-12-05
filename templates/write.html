@@ -12,7 +12,7 @@
   </div>
 
   <div class="storyFormContainer">
-    <form class="storyForm" action="{{ url_for('write')}}" method="POST">
+    <form class="storyForm" action="{{ url_for('write')}}" method="GET, POST">
       <input class="storyTitle" type="text" name="title" required>
       <label for="title" class="storyTitleLabel">Story Title</label>
       <input class="storySynopsis" type="text" name="synopsis" required>
